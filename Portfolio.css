@@ -1,0 +1,54 @@
+body{
+    background-color: wheat;
+
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    gap: 20px;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+img{
+padding:10%;
+height: 200px;
+border: 0.5px solid #313b4e;
+/* border-radius 1px; */
+box-shadow:7px 7px 17px #3b4456;
+}
+h1{
+padding: center;
+}
+.portfolio{
+display: flex;
+gap: 50px;
+
+
+}
+.portfolio-container{
+display: flex;
+grid-template-columns: repeat(2,1fr);
+gap: 20px;
+padding: 0 20px;
+
+}
+
+.portfolio-image-container{
+height: 200px;
+width: 200px;
+gap: 20px;
+}
+.portfolio-image-container img{
+height: 100%;
+width: 100%;
+}
+.members{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}

@@ -1,0 +1,271 @@
+
+*{
+margin: 0;
+padding: 0;
+}
+.logo{
+    display: flex;
+    margin-right: 700px;
+    
+    
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    gap: 20px;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.product-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main h1, .main h3{
+    color: #fff;
+    position: relative;
+    top: -150px;
+}
+
+.main h1{
+    font-size: 3rem;
+}
+
+.main::before{
+    content: "";
+    background: url(./mainimg.webp) no-repeat center center/cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    /* opacity: 0.9; */
+    filter: brightness(0.5);
+    z-index: -1;
+}
+.main h1, main h2{
+    align-items: center;
+}
+.img-container{
+margin-top: 0%;
+padding-top: 0%;
+display: center align;
+}
+ul li{
+    padding: 10px;
+}
+ul li:hover, .active{
+    background-color: grey;
+    color: black;
+    
+}
+.shoprange-btn{
+    background-color: rgb(98, 204, 216);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    position: relative;
+    top: -85px;
+    
+
+}
+.viewproduct-btn{
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+}
+
+   .buy-now-btn{
+    background-color: rgb(187, 187, 245);
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+.buy-now-btn:hover{
+    transform: scale(1.1);
+    background-color: green;
+   }
+.main .shopNow-btn{
+    
+    margin-top: -9rem;
+
+}
+.sale .shopNow-btn{
+    background-color: darkgoldenrod;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0px;
+    margin: 0%;
+    
+}
+.shopNow-btn:hover{
+    transform: scale(1.1);
+    background-color: black;
+}
+.discount{
+    text-decoration: line-through;
+}
+.price{
+    font-weight: 700;
+}
+.advertising-container{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.advertising{
+    display:flex;
+    gap: 40px;
+    background-color: rgb(220, 210, 210);
+    padding-left: 40px;
+
+}
+.advertisement-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.product{
+    border: 1px solid black; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 300px ;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+
+}
+.printer-type-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.featured-products-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.brands-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.brand-image-container {
+    height: 100px;
+    width: 200px;
+}
+
+.brand-image-container img {
+    height: 100%;
+    width: 100%
+}
+.brand  img{
+    width:400px;
+
+}
+.sale-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.brand{
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.brand img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.sale{
+    border: 1px solid black;
+    padding: 20px;
+    width: 400px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sale >h3{
+    max-width: 250px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    width: 500px;
+
+}
+
+footer{
+    /* position: relative; */
+}
+
+
+.kei-cont{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  
+}
+.img-container img{
+    transition: all 0.3s ease;
+}
+.img-container img:hover{
+    transform: scale(1.2);
+
+}
+

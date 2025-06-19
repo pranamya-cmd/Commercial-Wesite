@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet"href="./about.css">
+  
+     
+  
+</head>
+<body>
+  <section class="navbar" style="background-color: black;padding: 20px 100px;">
+    <div class="nav-container">
+        <nav>
+            
+            <ul style="list-style-type: none;">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Blog.html">Blog</a> </li>
+                <li><a href="about.html">Aboutus</a></li>
+                <li><a href="Research.html">Research</a> </li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                
+            </ul>
+        </nav>
+
+    </div>
+</section>
+  <body>
+    <!--we have to create feedback form here using div tags-->
+    <div class="container">
+      <div class="form-box">
+        <div class="form">
+        <!-- <form action=""name="formfill"> -->
+          <h2>Insert your opinion here!</h2><br>
+        <div class="input-box">
+            <input required=""placeholder="Enter Full name"id="name"type="text">
+        </div>
+        <div class="column1">
+          <p id="pgph"></p>
+            <div class="input-box">
+                <input type="text" id="address" name="Address"placeholder="Address">
+                </div> 
+              <div class="input-box">
+                  <input type="text" id="email" name="email"placeholder="email">
+                  </div>
+                  <div class="input-box">
+                    <input type="text"name="message"placeholder="message here">
+                    </div>
+                  <!-- </form> -->
+                    <div class="button">
+                      <button onclick="validateForm()">Submit</button>
+                    </div>
+                  </div>       <!-- we are creating pop up value here -->
+        </div>
+    
+</section>
+
+
+<script>
+  
+  // document.getElementById("submit").addEventListener('click', ()=>{
+    // alert("Form submitted Successfully!");
+  // })
+
+  function validateForm(){
+  var name = document.getElementById("name").value;
+  var email= document.getElementById("email").value;
+  var address= document.getElementById("address").value;
+  if(name === "" || email === ""){
+        alert("name and email are required!");
+
+        }
+        else{
+          alert("Your form submitted successfully");
+          var additionalInfo = prompt("Enter additional info")
+        var pgph = document.getElementById("pgph");
+
+       pgph.innerHTML = "<h1>Thank you for submitting "+ name + "</h1><br> \n Your email: " + email 
+        + " <br>\n Additional Info: "+ additionalInfo;
+
+       pgph.style.display = "block";
+
+        }
+      }
+</script>
+</body>
+</html>
